@@ -1,7 +1,7 @@
 // Copyright 2021 KarMashanova
-#define TRAIN_H
-#ifdef TRAIN_H
-#include <iostream>
+#ifndef INCLUDE_TRAIN_H_
+#define INCLUDE_TRAIN_H_
+#include<iostream>
 class Cage {
   bool light;
  public:
@@ -22,4 +22,4 @@ class Train {
   void printTrain();
   unsigned int getlen();
 };
-#endif  // TRAIN_H
+#endif  // INCLUDE_TRAIN_H_

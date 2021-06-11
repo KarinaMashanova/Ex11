@@ -22,6 +22,7 @@ TEST(TrainTest, test2) {
 }
 
 TEST(TrainTest, test3) {
+  Train train();
   for (int i = 0; i < 10300; i++) {
     train.addCage();
   }
