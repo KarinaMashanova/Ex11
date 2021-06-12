@@ -6,7 +6,7 @@
 #include "train.h"
 
 TEST(TrainTest, test1) {
-  Train train();
+  Train train;
   for (int i = 0; i < 9; i++) {
     train.addCage();
   }
@@ -14,7 +14,7 @@ TEST(TrainTest, test1) {
 }
 
 TEST(TrainTest, test2) {
-  Train train();
+  Train train;
   for (int i = 0; i < 1206; i++) {
     train.addCage();
   }
@@ -22,7 +22,7 @@ TEST(TrainTest, test2) {
 }
 
 TEST(TrainTest, test3) {
-  Train train();
+  Train train;
   for (int i = 0; i < 10300; i++) {
     train.addCage();
   }
