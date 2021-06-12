@@ -5,11 +5,12 @@ Train::Train() {
     (*this).last = nullptr;
 }
 void Train::addCage() {
-    Cage* new_cage = new Cage();
+  Cage* new_cage = new Cage();
   if (!first) {
     first = new_cage;
     last = new_cage;
-    this->last = new_cage;
+    first->next = last;
+    first->prev = last;
   }
   new_cage->prev = last;
   new_cage->next = first;
